@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*font-family: 'Great Vibes', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Mulish', sans-serif; */
+
+main {
+    background-image: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png");
+}
+
+
+/* =========================== HEADER ====================================== */
+
+header {
+    /*70% center/cover przesuwa lekko obrazek w lewo i na tym sie centruje*/
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    header {
+        background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover;
+        justify-content: center;
+    }
+}
+
+.header-text-box {
+    width: 100%;
+    color: hsla(0, 100%, 100%, 0.9);
+    background-color: hsla(0, 100%, 0%, 0.5);
+    font-family: 'Libre Baskerville', serif;
+}
+
+@media (min-width: 768px) {
+    .header-text-box {
+        width: 50%;
+        border-radius: 5px;
+    }
+}
+
+.top-text {
+    margin-top: 2vh;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+@media (min-width: 768px) {
+    .top-text {
+        text-transform: uppercase;
+    }
+}
+
+.top-text::after {
+    content: '';
+    display: block;
+    width: 26vh;
+    height: 0.1vh;
+    background-color: #fff;
+    margin: 1vh auto 0 auto;
+}
+
+.header-text-box h1 {
+    font-family: 'Great Vibes', cursive;
+    color: #d2ba87;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 2vh;
+}
+
+@media (min-width: 768px) {
+    .header-text-box h1 {
+        font-size: 12.5vh;
+    }
+}
+
+.header-text-box span {
+    display: inline-block;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    margin-bottom: 2vh;
+}
+
+@media (min-width: 768px) {
+    .header-text-box span {
+        font-size: 2.5vh;
+        margin-top: 2vh;
+    }
+}
+
+.header-text-box>span::before,
+.header-text-box>span::after,
+{
+    display: inline-block;
+    content: '';
+    background-color: #fff;
+    height: 0.1vh;
+    width: 5vh;
+    vertical-align: middle;
+}
+
+
+/* ========================================= MAIN ===========================================*/
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =================== LOCATIONS ===================*/
+
+.locations {
+    text-align: center
+}
+
+.locations-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width:768px) {
+    .locations-wrapper {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+.location-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3vh;
+    padding: 0 2vh 0 2vh;
+}
+
+.locations h2 {
+    font-size: 6.3vh;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    color: hsla(0, 100%, 0%, 0.7);
+    margin: 4vh 0 4vh 0;
+}
+
+.location-box h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3.1vh;
+    color: hsla(0, 100%, 0%, 0.7);
+    margin-bottom: 3vh;
+}
+
+.location-box img {
+    width: 16vh;
+    margin-bottom: 5vh;
+}
+
+.location-box span {
+    font-family: 'Mulish', sans-serif;
+    font-size: 2.5vh;
+    color: hsla(0, 100%, 0%, 0.7);
+    line-height: 4.5vh;
+}
+
+.location-box::after {
+    display: block;
+    content: '';
+    height: 3px;
+    width: 25%;
+    background-color: hsla(0, 100%, 0%, 0.7);
+    margin-top: 2vh;
+}
+
+@media (min-width: 768px) {
+    .location-box::after {
+        display: none;
+    }
+}
+
+
+/*font-family: 'Great Vibes', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Mulish', sans-serif; */
+
+
+/*========================== Program ======================*/
+
+.program {
+    color: #d2ba87;
+    background: hsla(100, 0%, 0%, .6);
+    display: flex;
+    justify-content: center;
+}
+
+.program h2 {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 400;
+    margin: 5vh 0 5vh 0;
+}
+
+.program span {
+    font-size: 2.5vh;
+    font-family: 'Mulish', serif;
+}

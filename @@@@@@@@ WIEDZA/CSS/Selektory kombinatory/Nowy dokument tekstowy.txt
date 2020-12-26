@@ -1,0 +1,36 @@
+CSS
+====================================================
+item1 item2
+{
+  asdasdasd: asda;
+}
+
+Wszystkie itemy2 będące potomkiem item1
+
+====================================================
+
+item1 > item 2
+{
+
+}
+
+Wszystkie itemy2 bedace dziecmi item 1
+
+====================================================
+
+item1 + item2
+{
+
+}
+
+
+Tylko item2 jezeli jest zaraz po item1 w kodzie html i mają we dwoje tego samego rodzica
+
+=====================================================
+
+item1 ~ item2
+{
+
+}
+
+Wszystkie itemy2, ktore są rodzeństwem itemu1 i po nim następują

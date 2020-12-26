@@ -1,0 +1,28 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+
+/*
+repeat(autofill, X) - utwórz tyle kolumn/wierszy o wymiarze X, ile zmiescisz na ekranie
+repeat(auto-fit, minmax(X, 1fr) - dąży do dopasowania istniejących elementów do dostępnej szerokości    
+*/
+
+.container {
+    background-color: rgb(22, 97, 81);
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 5px;
+    width: 100%;
+    height: 200px;
+}
+
+.box {
+    background-color: #303030;
+    color: #fff;
+    height: 100px;
+}

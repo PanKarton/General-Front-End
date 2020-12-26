@@ -1,0 +1,46 @@
+Komendy:
+>pwd (print working directory) - wyswietl aktualny folder
+>ls (list) - wyswietl podkatalogi
+>cd (change directory) X - przenosi do katalogu X
+		      .. - wraca do folderu wyzej
+		   Z/Y/C - mozna o kilka folderów wyzej wskoczyc
+
+-----------
+
+Klonowanie:
+
+>wchodzimy do folderu gdzie chcemy repozytyorium miec
+>git clone link
+
+
+-----------
+
+git status - pokazuje status repozytorium na pc w porównaniu do tego na serwerze
+
+
+
+-----------
+
+ Zanim dodamy te pliki do commitu, musisz wiedzieć, że Git obsługuje Twoje pliki w trzech oddzielnych miejscach:
+
+1.Pierwsze z nich to Twoje working directory (katalog pracy) na Twoim komputerze. (W tym wypadku folder simple-quote-page.) 
+  Możesz zmieniać pliki w katalogu pracy, a następnie (gdy będziesz gotowy) musisz przenieść je do tak zwanego staging area.
+
+2.Jest to abstrakcyjne miejsce między katalogiem pracy, a remote repository (zewnętrznym repozytorium). 
+  Gdy przeniesiesz rzeczy do staging area możesz połączyć je w commit i przesłać ("push") je do zewnętrznego repozytorium.
+
+3.Zewnętrzne repozytorium jest trzecim, ostatnim miejscem w trakcie tego procesu. 
+  Oto zdjęcie z oficjalnej dokumentacji Git, które dobrze to podsumowuje:
+
+-----------git 
+
+Wysyłka na serwer:
+
+>git add:
+	 X  - dodaje konkretny plik "pomiędzy" repozytoria
+	--all - dodaje wszystlko
+
+
+>git commit -m "commit message" - Spakowaliśmy wszystkie zmiany w "paczkę" zwaną commitem
+
+>git push - Wywala całą paczkę na serwer i uaktualnia repozytorium 

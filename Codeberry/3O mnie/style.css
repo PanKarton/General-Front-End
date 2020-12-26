@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* ramka wlicza sie w rozmiar boxa */
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('http://i.imgur.com/9kh3G8L.jpg');
+    /* tu dajemy link do obrazka */
+    background-repeat: no-repeat;
+    /* ma sie nie powtarzać gdy jest za mały, ma byc raz */
+    background-position: center center;
+    /* wysrodkowany w pionie i poziomie */
+    background-attachment: fixed;
+    /* nie rusza sie przy scrollowaniu */
+    background-size: cover;
+    /* ma pokrywac caly obszar tła przy zmianach rozmiaru okna przegladarki*/
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #666;
+    padding: 1px;
+    transition: all 0.5s ease-in-out;
+    /*DO SPRAWDZENIA I NAUCZENAI SIE=============*/
+    filter: grayscale(50%);
+    /*FILTR skala szarości 50%*/
+    /*Z tego co widze, to filtrów jest wiele*/
+}
+
+img:hover {
+    transform: scale(1.1);
+    /*DO SPRAWDZENIA I NAUCZENAI SIE=============*/
+    filter: grayscale(20%);
+    /*FILTR skala szarości 20%*/
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icon-twitter {
+    color: black;
+}
+
+.icon-twitter:hover {
+    color: #1DA1F2;
+}
+
+.icon-behance {
+    color: black;
+}
+
+.icon-behance:hover {
+    color: #053eff;
+}
+
+.icon-ig {
+    color: black;
+}
+
+.icon-ig:hover {
+    color: #E1306C;
+}
+
+.profile-card {
+    width: 480px;
+    max-width: calc(100vh - 10px);
+    /* maksymalna szerokosc to 100% okna - 10px, zeby przy wysrodkowaniu było po 5px odstępu, a okno sie wtedy nie zmniejszy*/
+    background-color: hsla(0, 0%, 100%, .5);
+    /*pierwsza liczba to kolor, potem nasycenie, czyli 0% szary, a 100% pełny kolor*/
+    border-radius: 4px;
+    box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+    /* kolor, wysokosc, szerokosc, rozmycie(blur), spread*/
+}
+
+.head {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+    padding: 5% 10%;
+    border-top: 1px solid hsla(0, 0%, 30%, .8);
+}
+
+.profile-image {
+    margin-top: -60px;
+}
+
+.name-headline {}
+
+.about {
+    margin-bottom: 10%;
+}
+
+.links {
+    text-align: center;
+}

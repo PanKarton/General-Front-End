@@ -1,0 +1,78 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    li {
+        border-bottom: 0.0625rem solid rgba(182, 182, 182, 0.747);
+    }
+    
+    .btn {
+        /*Zmienaimy na blok, bo a jest inline'em i klikałby sie tylo sam tekst*/
+        display: block;
+        /*Rozciągamy a na cały przycisk*/
+        font-size: 1.625rem;
+        line-height: 3rem;
+        font-family: 'Anton', sans-serif;
+        text-decoration: none;
+        text-align: center;
+        padding: 0.3125rem 0 0.3125rem 0;
+    }
+    
+    .btn-active {
+        background-color: #c74f78;
+        color: #fff;
+    }
+    
+    .btn-rest {
+        color: #c74f78;
+        background-color: #eee;
+        transition: background-color 0.25s ease-in-out;
+    }
+    
+    .btn-rest:focus {
+        background-color: #fff;
+    }
+    
+    @media (min-width: 600px) {
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #eee;
+        }
+        ul {
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            background-color: #eee;
+            list-style-type: none;
+            width: 90%;
+        }
+        li {
+            border-bottom: none;
+        }
+        .btn {
+            display: inline-block;
+            padding: 0 30px 0 30px;
+            font-size: 1.625rem;
+            line-height: 3rem;
+        }
+        .btn-active {
+            background-color: #c74f78;
+            color: #fff;
+        }
+        .btn-rest {
+            color: #c74f78;
+            background-color: #eee;
+            transition: background-color 0.25s ease-in-out;
+        }
+        .btn-rest:hover {
+            background-color: #fff;
+        }
+    }

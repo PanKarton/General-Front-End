@@ -1,0 +1,25 @@
+basic;
+
+-normalnie nic sie nie dzieje, standardowa wartosc i płynie z flow strony
+
+
+relative;
+
+-absolutnie jak basic, ale mozna go transformowac topem, rightem, leftem i bottomem, a po przemieszczeniu pozostaje dziura
+
+absolute;
+
+-wyskakuje poza flow strony i mozna go przemieszczac wzgledem najblizszego rodzica, ktory nie jest basic
+-eleementy zachowuja sie jakby go tam nie bylo
+
+fixed;
+
+-przykleja sie do "ekranu" i nie rusza sie przy scrollowaniu
+
+sticky;
+
+-po osiągnięciu danej "wysokosci" przykleja sie i zostaje w miejsciu na ekranie przy scrollowaniu w dol
+
+
+
+

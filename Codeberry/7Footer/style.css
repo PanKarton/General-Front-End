@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background: url("https://orange.codeberryschool.com/content/images/project-assets/simple-footer.png") repeat center;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: .875rem;
+}
+
+small {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+ul {
+    width: 20%;
+    margin: 2rem auto 0 auto;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+    color: #c74f78;
+}
+
+a:hover {
+    color: #f26896;
+    transition: color 0.25s ease;
+}
+
+span {
+    display: inline-block;
+}
+
+
+/*Wszystko w div, dajemy mu padding-bottom na wysokosc stopki i wciskamy ją na sam dol*/
+
+
+/*
+.wrapper {
+    position: relative;
+    padding-bottom: 130px;
+    min-height: 100vh;
+    padding-bottom: 130px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}
+*/
+
+
+/*a tu robimy całą strone relative w html'u, dajemy margin-bottom na body i wciskamy footer "pomiedzy" html, a body dzieki absolute*/
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 130px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}

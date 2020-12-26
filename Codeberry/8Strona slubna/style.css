@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*font-family: 'Great Vibes', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Mulish', sans-serif; */
+
+main {
+    background-image: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png");
+}
+
+a {
+    text-decoration: none;
+    color: #bd806e;
+}
+
+a:hover {
+    color: #eda087;
+}
+
+
+/* =========================== HEADER ====================================== */
+
+header {
+    /*70% center/cover przesuwa lekko obrazek w lewo i na tym sie centruje*/
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    header {
+        background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover;
+        justify-content: center;
+    }
+}
+
+.header-text-box {
+    width: 100%;
+    color: hsla(0, 100%, 100%, 0.9);
+    background-color: hsla(0, 100%, 0%, 0.5);
+    font-family: 'Libre Baskerville', serif;
+}
+
+@media (min-width: 768px) {
+    .header-text-box {
+        width: 50%;
+        border-radius: 5px;
+    }
+}
+
+.top-text {
+    margin-top: 0.95rem;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+@media (min-width: 768px) {
+    .top-text {
+        text-transform: uppercase;
+    }
+}
+
+.top-text::after {
+    content: '';
+    display: block;
+    width: 12.4rem;
+    height: 0.1vh;
+    background-color: #fff;
+    margin: 0.47rem auto 0 auto;
+}
+
+.header-text-box h1 {
+    font-family: 'Great Vibes', cursive;
+    color: #d2ba87;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .header-text-box h1 {
+        font-size: 5.95rem;
+    }
+}
+
+.header-text-box span {
+    display: inline-block;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+    margin-bottom: 0.95rem;
+}
+
+@media (min-width: 768px) {
+    .header-text-box span {
+        font-size: 1.19rem;
+        margin-top: 0.95rem;
+    }
+}
+
+.header-text-box>span::before,
+.header-text-box>span::after,
+{
+    display: inline-block;
+    content: '';
+    background-color: #fff;
+    height: 0.1vh;
+    width: 2.38rem;
+    vertical-align: middle;
+}
+
+
+/* ========================================= MAIN ===========================================*/
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =================== LOCATIONS ===================*/
+
+.locations {
+    text-align: center
+}
+
+.locations-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width:768px) {
+    .locations-wrapper {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+.location-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0 0.95rem 0 0.95rem;
+}
+
+.locations h2 {
+    font-size: 3rem;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    color: hsla(0, 100%, 0%, 0.7);
+    margin: 2rem 0 1.9rem 0;
+}
+
+.location-box h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.47rem;
+    color: hsla(0, 100%, 0%, 0.7);
+    margin-bottom: 1.42rem;
+}
+
+.location-box img {
+    width: 7.61rem;
+    margin-bottom: 2.38rem;
+}
+
+.location-box span {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.19rem;
+    color: hsla(0, 100%, 0%, 0.7);
+    line-height: 2.14rem;
+}
+
+.location-box::after {
+    display: block;
+    content: '';
+    height: 3px;
+    width: 25%;
+    background-color: hsla(0, 100%, 0%, 0.7);
+    margin-top: 0.95rem;
+}
+
+@media (min-width: 768px) {
+    .location-box::after {
+        display: none;
+    }
+}
+
+
+/*font-family: 'Great Vibes', cursive;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Mulish', sans-serif; */
+
+
+/*========================== Program ======================*/
+
+.program {
+    color: #d2ba87;
+    background: hsla(100, 0%, 0%, .6);
+    display: flex;
+    justify-content: center;
+    font-family: 'Mulish', serif;
+}
+
+.program-wrapper {
+    width: 100%;
+    padding-left: 1rem;
+}
+
+@media(min-width:768px) {
+    .program-wrapper {
+        width: auto;
+    }
+}
+
+.program-wrapper h2 {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 3.5vh 0 4vh 0;
+}
+
+.program-wrapper span {
+    font-size: 1.12rem;
+}
+
+.program-wrapper ul {
+    font-size: 1.15rem;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    list-style-type: none;
+}
+
+.program-wrapper ul li {
+    margin-top: 0.2rem;
+}
+
+
+/*=================================GIFTS================*/
+
+.gifts {
+    text-align: center;
+    color: hsla(0, 100%, 0%, 0.7);
+    padding: 0 1.5rem 0 1.5rem;
+}
+
+.gifts h2 {
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 5vh 0 4vh 0;
+}
+
+.gifts div {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+.gifts img {
+    width: 7.61rem;
+    margin: 0 0 2rem 0;
+}
+
+
+/*===================================Q&A=============*/
+
+.qna {
+    color: #d2ba87;
+    background: hsla(100, 0%, 0%, .6);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.question-group {
+    padding-left: 1rem;
+    margin: 0 2rem 0 2rem;
+}
+
+@media (min-width:768px) {
+    .question-group {
+        width: 30%;
+    }
+}
+
+.qna h2 {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 2rem 0 2rem 0;
+}
+
+.qna-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 3rem 2rem;
+}
+
+@media (min-width:768px) {
+    .qna-wrapper {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .question-group {
+        min-width: 25%;
+    }
+}
+
+.qna-wrapper h3 {
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+@media (min-width:768px) {
+    .qna-wrapper h3 {
+        text-align: left;
+    }
+    .qna h2 {
+        margin-bottom: 3rem;
+    }
+}
+
+.qna-wrapper h4,
+.qna-wrapper p {
+    font-family: 'Mulish', sans-serif;
+    line-height: 1.6rem;
+}
+
+.qna-wrapper h4 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.qna p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.question-group::after {
+    display: block;
+    content: '';
+    height: 0.1875rem;
+    width: 12rem;
+    background-color: #d2ba87;
+    margin: 2rem auto 2rem auto;
+}
+
+@media (min-width:768px) {
+    .question-group::after {
+        display: none;
+    }
+}
+
+
+/*=================================== contact ===================*/
+
+.contact {
+    text-align: center;
+    color: hsla(0, 100%, 0%, 0.7);
+}
+
+.contact h2 {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    font-size: 3rem;
+    margin: 2rem 0 2rem 0;
+}
+
+.contact div {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+
+/*============================================ Footer ==========================================*/
+
+footer {
+    background: hsla(100, 0%, 0%, .6);
+    text-align: center;
+    padding: 2.1rem 0 2.1rem 0;
+    font-family: 'Mulish', sans-serif;
+    color: #fff;
+}

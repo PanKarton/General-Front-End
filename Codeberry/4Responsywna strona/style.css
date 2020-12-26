@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* ramka wlicza sie w rozmiar boxa */
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    /* Dodaje czcionke  */
+    font-size: 1.125rem;
+    /*rozmiar 1.125*fontsize tagu html, czyli 16px*/
+    line-height: 2rem;
+    color: rgb(230, 222, 222);
+}
+
+h1,
+h2 {
+    font-family: 'Lora', serif;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #e5127d;
+}
+
+.main-header>p {
+    font-size: 1.125rem;
+    letter-spacing: 0.125rem;
+    /*przestrzeń między literami*/
+    color: #525358;
+    margin: 2.5rem auto;
+}
+
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: row;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+/* ==== LAYOUT STYLES ==== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+ul,
+ol,
+dd,
+p,
+figure,
+pre,
+table,
+fieldset,
+hr,
+img,
+.main-header,
+.primary-content {
+    margin-bottom: 1rem;
+}
+
+
+/*MAIN HEADER*/
+
+.main-header {
+    text-align: center;
+    padding: 1.25rem 1.25rem 2rem 1.25rem;
+    background-color: #303030;
+}
+
+
+/*ARTICLE*/
+
+.primary-content {
+    color: #242424;
+}
+
+.post {
+    width: 95%;
+    margin: 1rem auto 1rem;
+    padding: 0.3125rem;
+}
+
+.picture {
+    width: 100%;
+    /*100% szerokości rodzica, czyli section*/
+}
+
+.button {
+    display: inline-block;
+    color: #8c8e9b;
+    font-size: 1.8rem;
+    border: 2px solid rgb(131, 130, 130);
+    margin: auto 1.5rem;
+    padding: 0.2rem 4rem;
+    border-radius: 15px;
+    transition: transform 0.25s ease-in-out;
+}
+
+.button:hover {
+    color: white;
+    border-color: white;
+    background-color: #4f5055;
+    transform: scale(1.2);
+}
+
+.button:focus {
+    color: white;
+    border-color: white;
+    background-color: #83848d;
+}
+
+.load {
+    color: black;
+    margin: 0 0 2rem 1.531rem;
+}
+
+
+/*@media to taki if, w nawiasie warunek, a potem zwykly css*/
+
+@media (min-width: 768px) {
+    .button {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* ==== HELPER COLORS FOR LAYOUT ==== */
+
+
+/*
+.main-header {
+  background-color: rgba(255, 248, 53, .3);
+}
+
+.primary-content {
+  background-color: rgba(140, 96, 255, .3);
+}
+
+.post {
+  background-color: rgba(255, 0, 0, .3);
+}
+*/

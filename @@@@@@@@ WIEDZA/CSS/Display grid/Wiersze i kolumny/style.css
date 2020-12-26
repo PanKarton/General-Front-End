@@ -1,0 +1,25 @@
+body {
+    background-color: #512948;
+}
+
+.container {
+    /* Definiujemy grid */
+    display: grid;
+    /*Definiujemy ilosc i szerokość kolumn
+        przydatna funkcja repeat(ilość kolumn, szerokość kazdej)
+                  minmax(min_wartosc, max_wartosc), minimalna i maksymalna szerokosc kolumny, wysokosc wiersza, wartosc auto ustawi w zaleznosci od tresci
+        fr- fraction(ułamek) np. 1fr 1fr to 2 kolumny po 50%
+                                 1fr 2fr, 1 kolumna 1/3, a druga 2/3*/
+    /*2/6 1/6 1/6 2/6*/
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    /*3/12 2/12 1/12 1/12 2/12 3/12*/
+    grid-template-rows: 3fr 2fr 1fr 1fr 2fr 3fr;
+    /*grid-gap odleglosc miedzy elementami siatki*/
+    grid-gap: 1px;
+    text-align: center;
+}
+
+.box {
+    background-color: #303030;
+    color: white;
+}

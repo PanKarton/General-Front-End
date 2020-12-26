@@ -1,0 +1,109 @@
+1. Rzucamy do pojemnika display: flex;, ktory ustawia swoje dzieci
+
+-Rzeczy bazowo ustawiaja sie DOMYŚLNIE poziomo w rzędzie wypełniając 100% szerokosci i wysokosci
+-Jezeli ich łączna szerokosc jest wieksza niz container, to wypełnią razem cala szerokosc, zostana zmniejszone
+
+
+2. Ustawianko!
+
+>>>>>>>>>>>>>>> KOLUMNY A RZĘDY     FLEX-DIRECTION
+
+-row
+
+	Domyslna wartosc, itemy ukladaja sie poziomo w rzędzie od lewej do prawej
+
+-row-reverse
+	
+	Rząd poziomo od prawej do lewej na odwrot
+
+-column
+
+	Kolumna od góry do dołu, rozciągną się elementy, ze jeden będzie od prawej do lewej
+
+-column-reverse
+
+	Kolumna od dołu do góry
+
+>>>>>>>>>>>>>>GŁÓWNA OŚ (jak na liczydle zawieszone) - JUSTIFY-CONTENT  Row - pomiędzy prawo lewo    Column - pomiędzy góra dół    
+
+-flex-start
+
+	Domyslna wartosc, przy zmniejszeniu szerokosci elementy lecą w lewo
+
+-flex-end
+
+	Wszystkie elementy w prawo
+
+-center
+
+	Srodeczek (prawo lewo puste)
+
+-space-around
+
+	Rozdziela marginesy po tyle samo z prawej i lewej
+
+-space-between
+
+	Rozdziela po tyle samo przestrzeń między elementami, gdzie te zewnętrzne dotykają krańców
+
+-space-evenly
+
+	Rozdziela po tyle samo miejsca nawet z brzegów
+
+
+>>>>>>>>>>>>>>>prostopadła oś  (jak na liczydle zawieszone):    ALIGN-ITEMS   
+
+-stretch
+
+	Domyslna wartosc - rozciąga elementy rzędu od dołu do góry
+
+-baseline 
+
+	Ustawia do spodu pierwszego wersu elementu, na przyklad tytuły wyrówna
+
+-center
+
+	Ustawia elementy na samym srodeczku (góra dół puste)
+
+-flex-end
+
+	Ustawia cały rząd na dole samym
+
+-flex-start
+	
+	Ustawia cały rząd na górze samej
+
+
+
+3. Inne
+
+-flex-basis
+
+	To samo co width/height, ale ma wyzszy priorytet i nadpisuje szerokosc
+
+	Nadpisuje:
+		-width gdy flex-direction jest na row (itemy w rzędzie)
+		
+		-height gdy flex-direction jest na column (itemy w kolumnie)
+
+-flex: liczba
+
+	Określa to stosunek szerokosci danego obiektu do innego np.: flex 2 to obiekt 2x szerszy niz reszta, czyli 2:1
+
+	Flex to skrót (shorthand) tak jak background od background-image itp od:
+	
+	flex-grow: liczba - stosunek zmniejszania się elementu przy zwiększającym się oknie, im wyzszy tym element bardziej się rozciąga prawo lewo (flex-grow 2 dostaje np. 2x wiecej wolnej przestrzenia niz flex-grow 1)
+	flex-shrink: liczba - stosunek tempa zwiększania się elementu przy zmniejszaniu się okna, im wyzszy tym element bardziej sie kurczy i gniecie i leci góra dół
+	flex-basis - wyzej
+
+-flex-wrap
+
+	Odpowiada za przeskoki do nowej linii przy zmniejszaniu się okna
+	Domyślnie NOWRAP, czyli nie pozwala
+
+	flex-wrap: wrap; - przerzuca do nowej linii
+	flex-wrap: wrap-reverse; - przerzuca do linii wyzej
+
+-align-self
+
+	Ustawianie elementu poza resztą według powyższych zasad
