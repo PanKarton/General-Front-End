@@ -1,0 +1,20 @@
+section {
+    background-color: #ddd;
+    width: 80%;
+    margin: 100px auto;
+    font-family: sans-serif;
+    color: white;
+    font-size: 80px;
+}
+
+.f1 {
+    background-color: darkcyan;
+}
+
+.f2 {
+    background-color: darkred;
+}
+
+.f3 {
+    background-color: darkolivegreen
+}

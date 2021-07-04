@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+}
+
+.circle {
+    position: absolute;
+    border: 5px solid white;
+    width: 8vh;
+    height: 8vh;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.circle:hover {
+    cursor: pointer;
+}
+
+.red {
+    background-color: red;
+}
+
+div:nth-child(1) {
+    top: 5vh;
+    left: 5vw;
+}
+
+.blue {
+    background-color: blue;
+}
+
+div:nth-child(2) {
+    top: 5vh;
+    left: 85vw;
+}
+
+.orange {
+    background-color: orange;
+}
+
+div:nth-child(3) {
+    top: 85vh;
+    left: 85vw;
+}
+
+.green {
+    background-color: green;
+}
+
+div:nth-child(4) {
+    top: 85vh;
+    left: 5vw;
+}
+
+.bg {
+    width: 100vw;
+    height: 100vh;
+    background-color: #444;
+}
+
+p {
+    line-height: 100vh;
+    text-align: center;
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: absolute;
+    width: 100vw;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+
+/* Zeby hover wpłynął na inny element, to ten inny musi byc pozniej w strukturze
+A~B oznacza, ze wezwszystkie B występujące po A i będące dzieckiem tego samgo rodzica*/
+
+div.green:hover~.bg>p.green,
+div.red:hover~.bg>p.red,
+div.blue:hover~.bg>p.blue,
+div.orange:hover~.bg>p.orange {
+    opacity: 1;
+}

@@ -1,6 +1,8 @@
 Komendy:
 >pwd (print working directory) - wyswietl aktualny folder
 >ls (list) - wyswietl podkatalogi
+>xd - (=T(X#4!{73u3ZR_
+>lsd 242345Partokl!
 >cd (change directory) X - przenosi do katalogu X
 		      .. - wraca do folderu wyzej
 		   Z/Y/C - mozna o kilka folderów wyzej wskoczyc

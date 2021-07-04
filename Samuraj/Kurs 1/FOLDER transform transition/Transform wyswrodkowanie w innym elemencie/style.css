@@ -1,0 +1,42 @@
+/* Srodkowanie calcem + transform*/
+
+header {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    padding: 10px 20px 50px 20px;
+    border: 3px solid gray;
+    position: relative;
+}
+
+div {
+    padding: 20px;
+    width: 30%;
+    background-color: gray;
+    position: absolute;
+    left: calc(50% - 15% - 20px);
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+
+/* Srodkowanie transformem */
+
+
+/* header {
+    width: 80%;
+    height: 300px;
+    margin: 0 auto;
+    padding: 10px 20px 50px 20px;
+    border: 3px solid gray;
+}
+
+div {
+    padding: 20px;
+    width: 30%;
+    background-color: gray;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */

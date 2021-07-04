@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.clock {
+    width: 70vh;
+    height: 70vh;
+    border-radius: 50%;
+    background-color: darkred;
+    position: relative;
+}
+
+.clock:hover>.hand {
+    transform: rotate(360deg);
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: black;
+    width: 2vh;
+    height: 2vh;
+    position: absolute;
+    bottom: calc(50% - 1vh);
+    left: calc(50% - 1vh);
+}
+
+.hand {
+    width: 6px;
+    height: 45%;
+    background-color: black;
+    position: absolute;
+    bottom: 50%;
+    left: calc(50% - 3px);
+    border-radius: 35% 35% 0 0;
+    transform-origin: center bottom;
+    /* funkcja steps() jest funkcją czasu jak linear czy ease-in-out, dzieli tranzycje na X "klatek"*/
+    transition: 60s steps(60);
+}

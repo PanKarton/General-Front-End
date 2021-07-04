@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Oswald;
+}
+
+.team {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: #aaa;
+}
+
+.team>* {
+    position: absolute;
+}
+
+.color {
+    bottom: 0;
+    right: -5%;
+    height: 36%;
+    animation: animacjaColor 5s infinite linear;
+}
+
+.gray {
+    bottom: 0;
+    left: -70%;
+    height: 110%;
+    animation: animacjaGray 5s infinite linear;
+}
+
+.member {
+    width: 100%;
+    text-align: center;
+    top: 20%;
+    left: 0;
+    letter-spacing: 3px;
+    font-size: 2rem;
+    animation: animacjaText 5s linear infinite;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+@keyframes animacjaColor {
+    0% {
+        opacity: 0;
+        transform: translateX(0);
+    }
+    5% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-5%);
+    }
+}
+
+@keyframes animacjaGray {
+    0% {
+        opacity: 0;
+        transform: translateX(0) scale(1);
+    }
+    5% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.2;
+    }
+    80% {
+        opacity: 0.2;
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(1%) scale(1.05);
+    }
+}
+
+@keyframes animacjaText {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (orientation: landscape) {
+    .member {
+        left: 10vw;
+    }
+    .color {
+        right: 5%;
+        height: 56%;
+    }
+    .gray {
+        bottom: -10%;
+        left: -15%;
+        height: 130%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .member {
+        font-size: 4rem;
+    }
+}

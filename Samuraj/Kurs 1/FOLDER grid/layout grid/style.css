@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
+
+header {
+    background-color: red;
+}
+
+nav {
+    background-color: royalblue;
+}
+
+main {
+    background-color: saddlebrown;
+}
+
+aside {
+    background-color: greenyellow;
+}
+
+footer {
+    background-color: rgb(248, 113, 16);
+}

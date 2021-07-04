@@ -1,0 +1,41 @@
+section {
+    display: flex;
+    width: 600px;
+    height: 400px;
+    margin: 100px auto;
+    font-size: 80px;
+    font-family: sans-serif;
+    color: white;
+    background-color: #ddd;
+}
+
+div {}
+
+
+/* Order działa jak z-index */
+
+
+/* flex-shrink - okresla proporcje wg jakich maja się skurczyć elementy wystające poza rodzica */
+
+
+/* flex-grow - okresla proporcje jak maja sie powiekszyc elementy, aby wypelnic rodzica*/
+
+
+/* flex-basis - domyślnie auto (nie mniej niz zawartosc)
+    jest to szerokosc na głównej osi
+    W przeciwienstwie do width/height nie moze byc mniejszy niz zawartosc */
+
+.f1 {
+    order: 2;
+    flex-grow: 0.5;
+    background-color: darkcyan;
+}
+
+.f2 {
+    background-color: darkred;
+}
+
+.f3 {
+    order: -1;
+    background-color: darkolivegreen;
+}

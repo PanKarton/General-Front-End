@@ -1,0 +1,17 @@
+- this staje się czymś dopiero przy wywołaniu funkcji, taki troche bogin(xD)
+
+- this domyślnie wkazuje na obiekt globalny OBJECT (wiązanie domyslne)
+
+- this w metodzie obiektu wskazuje na obiekt kiedy metoda jest odpalana jako metoda obiektu (wiązanie niejawne)
+
+- this w standardowej funkcji mozna przypisac do obiektu za pomocą funkcja.call(obiekt), co sprawi ze funkcja 
+odpali sie tak jakby na obiekcie i this przyjmie ten obiekt (wiązanie jawne)
+
+- this mozna przypisac siłą do jakiegos obiektu i wtedy nowa zmienna będzie zawsze wykonywała daną funkcje na tym obiekcie
+  metoda bind()
+	const nowaFunkcja = funkcja.bind(obiekt)
+
+- addEventListener - przy callbacku function(){} odwoluje sie do tego co kliknięte
+
+- tworzenie instancji obiektu - odwołuje sie do nowej instancji
+

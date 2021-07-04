@@ -1,0 +1,31 @@
+p {
+    position: absolute;
+    font-size: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+span {
+    position: relative;
+}
+
+span::before {
+    content: '';
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(30%);
+    /* steps ma jeszcze drugi argument, domyślnie END, czyli kroki zaczynaja sie od 0% animacji, a 100% nie widać, zaś START to odwraca */
+    animation: dots 3s infinite both steps(3, start);
+}
+
+@keyframes dots {
+    100% {
+        transform: translateX(100%);
+    }
+}

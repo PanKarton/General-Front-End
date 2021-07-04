@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Powiększ</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        button {
+            padding: 10px;
+            font-size: 50px;
+            font-family: sans-serif;
+            background-color: transparent;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #ddd;
+        }
+        
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: #000;
+            position: fixed;
+            border-top: 6px solid red;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+            transform-origin: 0, 0;
+        }
+        
+        .squareTransition {
+            transition: transform .5s linear;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <button>Obróć w prawo</button>
+        <button>Obróć w lewo</button>
+        <button>Przed siebie</button>
+        <button>Do tyłu</button>
+        <button>W prawo</button>
+        <button>W lewo</button>
+
+    </div>
+
+    <div class="square"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

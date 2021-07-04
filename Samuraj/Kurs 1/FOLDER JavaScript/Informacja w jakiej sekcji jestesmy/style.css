@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    height: 150vh;
+}
+
+.sekcja1 {
+    background-color: teal;
+}
+
+.sekcja2 {
+    background-color: tomato;
+}
+
+.sekcja3 {
+    background-color: wheat;
+}
+
+.sekcja4 {
+    background-color: aqua;
+}
+
+.info {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 10vh;
+    text-align: center;
+    line-height: 10vh;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    background-color: #303030;
+    color: white;
+    transition: .8s;
+}

@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.red {
+    background-color: rgb(167, 32, 14);
+}
+
+.blue {
+    background-color: royalblue;
+}
+
+.yellow {
+    background-color: rgb(211, 211, 33);
+}
+
+.green {
+    background-color: rgb(28, 90, 28);
+}
+
+.colorIcons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #303030;
+    width: 4vw;
+    height: 40vh;
+    padding: 3vh 0;
+}
+
+.icon {
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+}
+
+.circle {
+    box-shadow: 0 0 0 5px #303030, 0 0 0 10px yellow;
+}
+
+body {
+    background-color: #eca3f5;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+main div {
+    height: 150vh;
+}

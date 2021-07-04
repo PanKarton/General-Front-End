@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    height: 200vh;
+}
+
+.rect {
+    width: 20vw;
+    height: 20vw;
+    border: 22px solid black;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.line {
+    border-top: 16px dashed black;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    transform: translateY(calc(100vh - 50%));
+}

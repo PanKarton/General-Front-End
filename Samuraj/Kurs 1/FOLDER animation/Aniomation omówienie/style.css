@@ -1,0 +1,61 @@
+/* 0% i 100% to domyślne margin-left: 0;
+        i dlatego wraca */
+
+@keyframes move {
+    10% {
+        margin-left: 0;
+    }
+    50% {
+        margin-left: calc(100% - 15vw);
+    }
+    60% {
+        margin-left: calc(100% - 15vw);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    width: 15vw;
+    height: 15vw;
+    background-color: red;
+    /* Nazwa animacji */
+    animation-name: move;
+    /* Czas animacji */
+    animation-duration: 5s;
+    /* Opóźnienie uruchomienia animacji */
+    animation-delay: 0s;
+    /* Funkcja czasowa (gdzie ma przyspieszyc/zwolnic) */
+    animation-timing-function: linear;
+    /* Ilosc powtórzeń */
+    animation-iteration-count: infinite;
+    /* W jakis sposób ma na osi 0-100% leciec
+        alternate 0 - 100 - 0 - 100
+        alternate-reverse 100 - 0 - 100 - 0
+        normal  0 - 100
+        reverse  100 - 0 
+    */
+    animation-direction: alternate;
+    /* Ważne w przypadku opóźnienia LUB/ORAZ gdy animacja się kończy
+
+        none - przed animacją na swoim miejscu, po animacji wraca na to samo miejsce
+
+        forwards - po skonczonej animacji zostanie na miejscu, nie wróci 
+
+        backwards - Przed animacją jest na 0%{}, a po niej wraca do wartosci obiektu
+
+        both - Przed animacją element ma wlasciwosci z 0%{}, a po zapończeniu z 100%{} 
+        */
+    animation-fill-mode: both;
+    /* Status animacji:
+        running - działa
+        paused - pauza */
+    animation-play-state: running;
+}
+
+button:hover+div {
+    animation-play-state: paused;
+}

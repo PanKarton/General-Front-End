@@ -1,0 +1,32 @@
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+img:first-child {
+    z-index: 1;
+    animation: img 5s infinite linear both;
+}
+
+
+/* pierwsze zdjęcie idzie indexem wyzej, a animacja pojawia go i znika  */
+
+@keyframes img {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

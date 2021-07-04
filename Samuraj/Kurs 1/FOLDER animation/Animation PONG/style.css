@@ -1,0 +1,161 @@
+html {
+    /* stół */
+    --tableHeight: 400px;
+    --tableWidth: 700px;
+    --tableColor: #303030;
+    /* piłka */
+    --ballSize: 20px;
+    --ballColor: white;
+    ;
+    /* paletki */
+    --paddleHeight: 80px;
+    --paddleWidth: 25px;
+    --paddleColor: yellow;
+    /* pozycja paletki */
+    --paddleFromEdge: 50px;
+    /* czas animacji */
+    --animationTime: 5s;
+}
+
+.table,
+.ball,
+.paddle {
+    position: absolute;
+}
+
+.table {
+    width: var(--tableWidth);
+    height: var(--tableHeight);
+    background-color: var(--tableColor);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.ball {
+    width: var(--ballSize);
+    height: var(--ballSize);
+    border-radius: 50%;
+    background-color: var(--ballColor);
+    top: calc( 50% - var(--ballSize)/2);
+    left: calc( 50% - var(--ballSize)/2);
+    animation: ballMove var(--animationTime) linear both;
+}
+
+.paddle {
+    width: var(--paddleWidth);
+    height: var(--paddleHeight);
+    background-color: var(--paddleColor);
+    top: calc(50% - var(--paddleHeight)/2);
+}
+
+.player {
+    left: var(--paddleFromEdge);
+    animation: playerMove var(--animationTime) linear both;
+}
+
+.ai {
+    right: var(--paddleFromEdge);
+    animation: aiMove var(--animationTime) linear both;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 8rem;
+    font-size: 2.5rem;
+    animation: showResult 0.5s var(--animationTime) linear both;
+}
+
+@keyframes showResult {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes ballMove {
+    /* Takie procenty, bo śednia prędkość piłki wynosi 13px/1% */
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    20% {
+        /* Piłka leci w prawo o połowe table odjąć szerokosc paletki, dystans paletki od sciany i polowe piłki
+         */
+        /* Leci w dół o wysokosć table podzieloną na więcej niż pół, żeby było troche nad dołem table  */
+        transform: translateX( calc(var(--tableWidth)/2 - var(--paddleWidth) - var(--paddleFromEdge) - 50%))translateY(calc(var(--tableHeight)/2.6));
+    }
+    37% {
+        /* w lewo o:
+                    - szerokosc table * 0.1
+            w dół o:
+                    - do dolnej granicy
+                    - wysokosc table / 2 + promień piłki*/
+        transform: translateX(calc(var(--tableWidth)*0.1)) translateY(calc(var(--tableHeight)/2 - var(--ballSize)/2));
+    }
+    56% {
+        /*  w lewo o: 
+                    - do lewej granicy, wiec szerokosc stołu/2 + odległossc paletki od sciany + szerokosc paletki + promień piłki
+            w góre o:
+                    - 30% wysokosci */
+        transform: translateX(calc(-1 * var(--tableWidth)/2 + var(--paddleWidth) + var(--paddleFromEdge) + var(--ballSize)/2)) translateY(30%);
+    }
+    80% {
+        /*  w prawo o:
+                    - 1/4 szerokosci table 
+            w góre o:
+                    - do górnej granict
+                    - 1/2 wysokosci table + promień piłki */
+        transform: translateX(calc(var(--tableWidth)/4)) translateY(calc(-1 *var(--tableHeight)/2 + var(--ballSize)/2));
+    }
+    100% {
+        /* i tu wywalamy piłke*/
+        transform: translateX(calc(var(--tableWidth)*0.9)) translateY(0);
+    }
+}
+
+@keyframes playerMove {
+    0% {
+        transform: translateY(-150%);
+    }
+    15% {
+        transform: translateY(calc(var(--tableHeight)/2.6));
+    }
+    25% {
+        transform: translateY(calc(var(--tableHeight)/2 - var(--paddleHeight)/2));
+    }
+    50% {
+        transform: translateY(30%);
+    }
+    75% {
+        transform: translateY(calc(-1 *var(--tableHeight)/2 + var(--paddleHeight)/2));
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes aiMove {
+    0% {
+        transform: translateY(0);
+    }
+    15% {
+        transform: translateY(calc(var(--tableHeight)/2.6));
+    }
+    25% {
+        transform: translateY(calc(var(--tableHeight)/2 - var(--paddleHeight)/0.9));
+    }
+    50% {
+        transform: translateY(30%);
+    }
+    75% {
+        transform: translateY(-60%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}

@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    padding: 50px 120px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    line-height: 200%;
+}
+
+.button {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    font-size: 2.5rem;
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 80px;
+    cursor: pointer;
+    transition: .5s;
+    transform: translateY(0) rotate(0);
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.button.active {
+    transform: translateY(-270px) rotate(-180deg);
+}
+
+.menu {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 300px;
+    background-color: #303030;
+    transform: translateY(270px);
+    transition: .5s;
+}
+
+.menu.active {
+    transform: translateY(0);
+}

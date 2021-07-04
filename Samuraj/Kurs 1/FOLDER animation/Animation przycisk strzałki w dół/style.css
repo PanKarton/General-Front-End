@@ -1,0 +1,36 @@
+.arrow {
+    position: absolute;
+    top: 30vh;
+    left: 10vw;
+    width: 100px;
+    height: 100px;
+    line-height: 100%;
+    font-size: 4.5rem;
+    border-radius: 50%;
+    border: 0px solid;
+    background-color: hsl(214, 100%, 50%);
+    color: white;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.arrow:hover {
+    transform: scale(1.1);
+}
+
+.arrow i {
+    text-shadow: 0 25px white, 0 -25px white;
+    transform: translateY(-150%);
+    animation: moveDown 1.5s infinite both linear;
+}
+
+@keyframes moveDown {
+    100% {
+        transform: translateY(150%);
+    }
+}
+
+.arrow:hover i {
+    animation-duration: 1s;
+}

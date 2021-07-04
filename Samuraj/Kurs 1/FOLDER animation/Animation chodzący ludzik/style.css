@@ -1,0 +1,32 @@
+/* Wymiary zdjecia 2048x314 */
+
+section {
+    width: 256px;
+    height: 314px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('walking.png');
+    animation: walk 1s infinite steps(8), move 8s infinite linear;
+}
+
+@keyframes walk {
+    100% {
+        background-position: -2048px;
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0) scale(1, 1);
+    }
+    50% {
+        transform: translateX(calc(100vw - 100%)) scale(1, 1);
+    }
+    50.01% {
+        transform: translateX(calc(100vw - 100%)) scale(-1, 1);
+    }
+    100% {
+        transform: translateX(0) scale(-1, 1);
+    }
+}

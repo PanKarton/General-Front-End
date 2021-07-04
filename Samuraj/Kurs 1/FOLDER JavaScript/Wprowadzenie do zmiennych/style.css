@@ -1,0 +1,17 @@
+body {
+    height: 300vh;
+}
+
+div {
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+    font-size: 3rem;
+}
+
+button {
+    position: fixed;
+    top: 15vh;
+    left: 15vw;
+    font-size: 3rem;
+}

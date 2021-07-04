@@ -1,0 +1,38 @@
+body {
+    width: 95vw;
+    height: 95vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.bell {
+    position: relative;
+    color: cadetblue;
+    font-size: 4.2rem;
+    border: 9px solid;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    cursor: pointer;
+}
+
+.bell>i {
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform-origin: center top;
+    transform: translate(-50%, -50%) rotate(25deg);
+    animation: bell 0.4s infinite alternate both linear;
+}
+
+.bell:hover>i {
+    animation-duration: 0.1s;
+}
+
+@keyframes bell {
+    100% {
+        transform: translate(-50%, -50%) rotate(-25deg);
+    }
+}

@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div {
+    width: 30vh;
+    margin: 50px auto;
+    border: 10px solid black;
+}
+
+
+/* Clearfix to klasa dodająca pseudoelement wrzucajace clear:both na koniec sam, aby pudełko widziało wysokość wszystkich dzieci floatów, musi być blokowe*/
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+span {
+    /* Float: left zmienia element liniowy w blokowy z automatu*/
+    float: left;
+    /* Rodzic floata nie widzi jego wysoksoci*/
+    width: 50%;
+    height: 15vh;
+}
+
+span:nth-child(2),
+span:nth-child(3) {
+    background-color: red;
+}

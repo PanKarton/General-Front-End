@@ -1,0 +1,14 @@
+div {
+  width: 100px;
+  height: 200px;
+  background-color: royalblue;
+  font-size: 20px;
+  border: 2px solid black;
+}
+
+div > p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+  letter-spacing: 8px;
+}
+/*# sourceMappingURL=style.css.map */

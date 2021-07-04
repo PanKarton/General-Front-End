@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+    margin: 0;
+}
+
+button {
+    margin-top: 20vh;
+    position: absolute;
+}
+
+div {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    position: absolute;
+    transition: 2s;
+    transform-origin: 0, 0;
+}
+
+button:hover+div {
+    /*od 100% odjąć trzeba połowe pierwotnego kwadratu i połowe finalnego, bo transform translate przesuwa wzgledem srodka*/
+    transform: translate(100%, 100%) scale(10);
+}

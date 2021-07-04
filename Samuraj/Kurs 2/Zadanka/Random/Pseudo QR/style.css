@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr {
+    width: 40vh;
+    height: 40vh;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.qrCell {
+    width: 4vh;
+    height: 4vh;
+}
+
+.black {
+    background-color: #000;
+}

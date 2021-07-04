@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+div {
+    height: 30vh;
+    width: 30vh;
+    position: absolute;
+    top: calc(50vh - 15vh);
+    left: calc(50vw - 15vh);
+    border: 8px solid #000;
+    /* Niestety elementy inline-blick mają swoje wbudowane głeboko marginesy, których nie da się wyzerować, ustawienie font-size: 0 to jedyne wyjście, a nie zakłóci to niczego, bo fontsize potem mozna jeszcze ustawić;*/
+    font-size: 0;
+}
+
+span {
+    display: inline-block;
+    width: 50%;
+    height: 50%;
+    line-height: 100%;
+}
+
+span:nth-child(2),
+span:nth-child(3) {
+    background-color: red;
+}
+
+h1 {
+    display: block;
+    position: relative;
+    top: 70vh;
+}

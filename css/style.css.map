@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,GAAG,CAAC;EACA,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,gBAAgB,EAAE,SAAS;EAC3B,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,eAAe;CAIK;;AAThC,AAMI,GAND,GAME,CAAC,CAAC;EACC,WAAW,EAAE,4BAA4B;EACzC,KAAK,EAAE,GAAG;EACV,cAAc,EAAE,GAAG;CAAG",
+    "sources": [
+        "../Samuraj/Kurs 1/FOLDER Sass/pierdoły/sass/style.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}

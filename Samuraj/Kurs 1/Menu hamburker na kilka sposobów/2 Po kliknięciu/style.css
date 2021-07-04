@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.burger {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    font-size: 40px;
+    /* Jako że mamy box-sizing: border-box;, to trzeba pamiętać że height = line-height + border-top + border-bottom, czyli 50+2+2 */
+    width: 52px;
+    height: 52px;
+    font-family: arial;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid black;
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.activeBtn {
+    transform: rotate(405deg) scale(1.1);
+}
+
+aside {
+    height: 100vh;
+    width: 15vw;
+    background-color: #303030;
+    transform: translateX(-100%);
+    transition: transform .5s;
+}
+
+.burger.activeBtn+aside {
+    transform: translateX(0);
+}

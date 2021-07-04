@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 10vh;
+}
+
+ul {
+    padding-top: 2vh;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    flex-basis: 18vw;
+}
+
+a {
+    display: block;
+    background: #303030;
+    color: white;
+    text-decoration: none;
+    line-height: 8vh;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    ul {
+        flex-wrap: wrap;
+        padding-top: 0;
+    }
+    li {
+        flex-basis: 100%;
+    }
+}
+
+a:hover {
+    background: #404040;
+}
